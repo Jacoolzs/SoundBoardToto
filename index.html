@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundBoard Toto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SoundBoard</h1>
+            <div class="controls">
+                <input type="text" id="search-sound" placeholder="Buscar sonido...">
+                <button id="add-sound">Añadir Sonido</button>
+            </div>
+        </div>
+        <div id="soundboard" class="soundboard"></div>
+    </div>
+
+    <!-- Modal para añadir sonidos -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Añadir Nuevo Sonido</h2>
+            <input type="text" id="sound-name" placeholder="Nombre del Sonido">
+            <input type="file" id="sound-file" accept="audio/*">
+            <button id="save-sound">Guardar</button>
+        </div>
+    </div>
+
+    <!-- Modal para editar sonidos -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Sonido</h2>
+            <input type="text" id="edit-sound-name" placeholder="Nuevo Nombre del Sonido">
+            <button id="update-sound">Actualizar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
